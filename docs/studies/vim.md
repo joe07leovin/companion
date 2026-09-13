@@ -1,0 +1,13 @@
+##Vim commands to know of 
+- i to enter edit mode 
+- esc to exit edit mode
+- :wq to save and quit vim 
+- yy outside edit mode to copy the current line
+- p paste the copied line below the copied line 
+- dd cut a line 
+- 0 start of line 
+- $ end of line 
+- g_ last non blank charachter 
+- gg top of file 
+- G bottom of file 
+- 7G jump to line 7 
