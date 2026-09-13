@@ -1,4 +1,4 @@
-##Vim commands to know of 
+# Vim commands to know of 
 - i to enter edit mode 
 - esc to exit edit mode
 - :wq to save and quit vim 
