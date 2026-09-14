@@ -1,3 +1,4 @@
+#!/bin/bash
 # health check for HAl print a line 
 # Created 13th Sept 2026
 DISK=$(df -h / | awk 'NR==2 {print $5}')
