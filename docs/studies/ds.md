@@ -29,12 +29,12 @@ so a mutable array is declared. if the array is not mutable rust would not allow
 as with measuring performace we use the timer. The timer is refered from the library std::time::{instant}. the loop is startde for items in 0 to size  
 and pushed to the mutable array. performance is calculate by dividing elapsed time as float by size as float 
 
-**Observation: **
+** Observation: **
 - Regardless of the size of the operation the insert into array was constant at around ~65 ns  
 - except the first inert operation i.e 100, the rest all were constant   
 
-**Inference: **   
-* When an operation takes the same time i.e The average constant time regardless of the size i.e 10x, 100x, 1000x  it is call amortized O(1).  
+** Inference: **   
+*TBR-> When an operation takes the same time i.e The average constant time regardless of the size i.e 10x, 100x, 1000x  it is call amortized O(1).  
 so why was the first operation slow? was it cos of the first initialisation? The real world analogy would be for the first time i took time to    
 set up the jetson for time T, then for subsequent logins it was the same time t. if i take the average it would be amortized O(1)*  
 
