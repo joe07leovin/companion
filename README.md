@@ -23,6 +23,11 @@ Sat 12 Sept 2026
 - started a server, pinged from mac 60 sec and 5 mins it worked
 - reinstalled stale packages i worked
 - rebooted and sshed into through wifi it worked
+Sun 13th Sept 2026
+- getting comfortable with vim and learnt vim commands
+- getting comfortable with tmux utiling tmux efficiently 
+- gettong comfortable woth bash learnt bash commands
+- productive day 
 ## Current Config
 - wifi on 5Ghz fallback 2.4 Ghz
 - jetson connected to tv via hdmi so 2 users are being identified, need to disconnect the tv
