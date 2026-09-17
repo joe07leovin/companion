@@ -1,8 +1,8 @@
 fn main() {
     fn linear_search(haystack: &[i32], needle: i32) -> Option<usize> {
         for number in haystack {
-            if needle == number {
-                return Some(i);
+            if needle == *number {
+                return Some(number);
             }
             return None;
         }
