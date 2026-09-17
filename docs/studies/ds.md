@@ -44,6 +44,7 @@ set up the jetson for time T, then for subsequent logins it was the same time t.
 - The definition of Amortized O(1) while in itself is correct, the point where identified is wrong, the average time to insert an element inside an array is always constant
 - If the array is of fixed size it is O(1), however if it is dynamic and it grows it is a gemetric series, growth events become less frequent 
 - However the loop for n number of pushes scales linearily O(n)
+
 - Also i am not using array rather i am using a dynamic vector, which brings to the observation taht rust would increase the size of the vector as it exceed inoit size on the fly 
 
 ***Result***
@@ -54,3 +55,32 @@ set up the jetson for time T, then for subsequent logins it was the same time t.
 - Because capacity grows gemoetrically, these expensive reallocations become less frequent and the total reallocation work over n pushes remain O(n).
 - Hence the average cost per push remains O(1)
 - A Vec is a dynamic contiguous collection, not a fixed-size Rust array. It maintains a length and a capacity and may reallocate when its length exceeds the available capacity.
+
+**Sept 17th: Memory and allocation**
+_What is a Byte_
+- A byte is comprised of 8 bits, A bit at the basic level is the basic unit of information representind one of two states on or off  of a transistor
+- there are 2^8 combinations of state for a byte => 256 pattrens 
+- 255 is the biggest number a byte can hold, 11111111 in binary and 0xff in hex
+- 256 is the outerbound, which would mean 9bits are required
+
+This is an interesting point to note, hwo rust handles tehse scenarios. There are three types of defenses
+| Type    | Exaplaination          |
+|---------|------------------------|
+| Compile | reuses to build        |
+| Debug   | panics and shows error |
+| release | Masks bug invisible    |
+
+_Data memory management_
+<ins>Stack</ins>
+- the default memory allocation of rust  when application starts up
+- shortlived dies with call
+- memeory is allocated contiguosly 
+- lIFO
+<ins>Heap</ins>
+- this is allocated by teh user 
+- long lived can survive outside the scope. depending on moving and returning ownerships 
+- User set the size of the heap Box::new(42i32)
+- memory is freed automayically 
+Note: Unlike C where alloc and free are manual, in Rust memory is freed automatically 
+
+Stack and  Heap are two distant regions of the virtual address, kernel maps them to Ram 
