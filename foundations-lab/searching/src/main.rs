@@ -1,11 +1,11 @@
 fn main() {
     fn linear_search(haystack: &[i32], needle: i32) -> Option<usize> {
-        for number in haystack {
+        for (i, number) in haystack.iter().enumerate() {
             if needle == *number {
-                return Some(number);
+                return Some(i);
             }
-            return None;
         }
+        return None;
     }
 
     let data = [3, 7, 12, 19, 25, 31]; // sorted
