@@ -561,3 +561,7 @@ disk:87% | ram-total:7.4Gi | ram-used:2.1Gi | ram-cached:1.9Gi | uptime:24 : 14 
 disk:87% | ram-total:7.4Gi | ram-used:2.1Gi | ram-cached:1.9Gi | uptime:24 : 29 : 45 | power: 25W | wifi: -56 dbm
 disk:87% | ram-total:7.4Gi | ram-used:2.1Gi | ram-cached:1.9Gi | uptime:24 : 44 : 54 | power: 25W | wifi: -57 dbm
 disk:87% | ram-total:7.4Gi | ram-used:1.8Gi | ram-cached:1.6Gi | uptime:0 : 2 : 11 | power: 25W | wifi: -57 dbm
+disk:87% | ram-total:7.4Gi | ram-used:1.9Gi | ram-cached:1.6Gi | uptime:0 : 17 : 14 | power: 25W | wifi: -58 dbm
+disk:87% | ram-total:7.4Gi | ram-used:1.9Gi | ram-cached:1.6Gi | uptime:0 : 32 : 44 | power: 25W | wifi: -57 dbm
+disk:87% | ram-total:7.4Gi | ram-used:2.0Gi | ram-cached:1.6Gi | uptime:0 : 48 : 14 | power: 25W | wifi: -58 dbm
+disk:87% | ram-total:7.4Gi | ram-used:2.0Gi | ram-cached:1.6Gi | uptime:1 : 3 : 43 | power: 25W | wifi: -57 dbm
